@@ -21,7 +21,7 @@ let limiter = new RateLimit({
 })
 
 // apply to all requests
-app.use(limiter)
+//app.use(limiter) // XXX: disabled for now
 
 const resolvers = {
   Query: {
