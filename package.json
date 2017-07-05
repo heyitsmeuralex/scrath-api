@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.2",
+    "express-rate-limit": "^2.6.0",
+    "graphql": "^0.10.3",
+    "graphql-server-express": "^1.0.0",
+    "graphql-tools": "^1.1.0",
+    "mz": "^2.6.0",
+    "node-fetch": "^1.6.3"
+  }
+}

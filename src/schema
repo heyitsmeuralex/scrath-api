@@ -1,0 +1,39 @@
+type Query {
+  user(username: String!): User
+}
+
+type User {
+  id: Int
+  username: String
+  
+  joinDate: String
+  country: String
+
+  avatar(size: Int = 100): String
+
+  aboutMe: String
+  workingOn: String
+
+  comments(limit: Int = 10): [Comment]
+
+  followers(limit: Int = 50): [User]
+  followerCount: Int
+
+  following(limit: Int = 50): [User]
+  followingCount: Int
+}
+
+type Comment {
+  id: Int
+  author: User
+  content: String
+  createDate: String
+  replies: [Reply]
+}
+
+type Reply {
+  id: Int
+  author: User
+  createDate: String
+  content: String
+}
